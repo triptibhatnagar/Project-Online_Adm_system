@@ -23,7 +23,7 @@ body {
     top : 0;
     left : 0;
     width : 100%;
-    padding : 0.5rem 3%;
+    padding : 0.5rem 2%;
     padding-top: 1rem;
     background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(20px);
@@ -583,7 +583,7 @@ section {
 
 
 #clg-logo {
-    height: 80px;
+    height: 75px;
     width: 350px;
 }
 
@@ -596,4 +596,16 @@ ul#bullet-list li:before {
     content: '\ffed';
     margin-right: 0.5em;
     color: #edd17a;
+}
+
+#wall-of-fame {
+    width:100%;
+}
+
+.alumni-section {
+    background-color: #fff;
+   
+}
+.alumni-section .content {
+    box-shadow: 10px 10px 5px gray;
 }
