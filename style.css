@@ -174,12 +174,16 @@ section {
     text-align: center;
     color: #fff;
 } 
-
+.about .heading {
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+}
 .about-content {
     text-align: center;
     backdrop-filter: blur(10px);
-    background-color: rgba(0,0,0,0.5);
-    border: 1px solid rgba(24,24,24,0.3);
+    background-color: rgb(244, 215, 215);
+    border: 4px solid red;
     border-radius: 70px 15px;
     padding: 5rem;
     margin : 100px;
@@ -191,7 +195,6 @@ section {
 }
 
 .about-content p {
-    color : #dd944c;
     max-width: 800px;
 }
 
@@ -290,7 +293,7 @@ section {
 .btns {
     display: inline-block;
     padding: 0.5rem 1.8rem;
-    background: #dd944c;
+    background: red;
     border-radius: 4rem;
     font-size: 1rem;
     color: #fff;
@@ -298,17 +301,18 @@ section {
 }
 
 .reviews{
-    background-color: #080808;
+    background-color: #fff;
 }
 
 .reviews h2{
     margin-bottom: 10rem;
+    color: red;
 }
 
 .reviews-container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 8rem;
+    grid-template-columns: repeat(3,1fr);
+    /* margin-top: 0; */
     gap: 2rem;
 }
 
@@ -321,27 +325,29 @@ section {
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: 0.2rem solid #e4b381;
+    border: 0.2rem solid red;
     cursor: pointer;
     transition: 0.4s ease;
-    color: #fff;
+    color: black;
 }
-
+.reviews-box {
+    background-color : rgb(244, 215, 215);
+}
 .reviews-box p{
     font-size: 15px;
     margin: 1rem 0 3rem;
 }
 
 .reviews-container .reviews-box:hover{
-    border-color:#dd944c ;
+    border-color:rgb(244, 215, 215) ;
     transform: scale(1.02);
-    background-color: #fff;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .reviews-box span{
     font-size: 50px;
-    color: #dd944c;
+    color: black;
 }
 
 .reviews-box h3{
@@ -353,7 +359,7 @@ section {
 }
 
 ::-webkit-slider-thumb{
-    background-color: #dd944c;
+    background-color: red;
 }
 
 ::-webkit-scrollbar-track{
@@ -361,15 +367,16 @@ section {
     width: 50px;
 }
 
-.contact{
-    background-color: #010101;
+.faqs{
+    background-color: #fff;
 }
 
-.contact h2{
+.faqs h2{
     margin-bottom: 3rem;
+    color : red;
 }
 
-.contact form{
+.faqs form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -377,19 +384,19 @@ section {
     /* flex-wrap: wrap; */
 }
 
-.contact form .input-box input,
-.contact form textarea{
+.faqs form .input-box input,
+.faqs form textarea{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: #fff;
-    background:#010101;
+    background:#fff;
     border-radius: 1rem;
-    border: 2px solid #dd944c;
+    border: 2px solid #edd17a;
     margin: 1rem 0;
 }
 
-.contact form .btn{
+.faqs form .btn{
     margin-top: 2rem;
 }
 
@@ -398,7 +405,7 @@ section {
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: #dd944c;
+    background-color: red;
 }
 
 .footer .social{
@@ -608,4 +615,46 @@ ul#bullet-list li:before {
 }
 .alumni-section .content {
     box-shadow: 10px 10px 5px gray;
+}
+
+.faq-section .q {
+    border: 2px solid black;
+    border-style: none;
+}
+
+.faq-section .scholarships {
+    list-style-position: inside;
+}
+
+.faq-section .Q-Heading {
+    font-size: 1.6rem;
+    color : red;
+}
+
+.faq-section .A-Heading {
+    font-size: 1.6rem;
+    color : gray;
+    font-weight: bold;
+}
+
+.faq-section .Q-Container {
+    background-color: rgb(244, 215, 215);
+    padding : 20px;
+    border-left: 4px solid red;
+}
+
+.faq-section .A-Container {
+    padding : 20px;
+    border-left: 4px solid gray;
+}
+
+hr {
+    border-color: red;
+}
+
+
+.reviews-box .student-img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
 }
